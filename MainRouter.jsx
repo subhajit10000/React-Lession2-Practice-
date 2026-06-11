@@ -9,16 +9,18 @@ import Profile from "../components/Profile.jsx";
 
 
 
-const Router = createBrowserRouter(
-    createRoutesFromElements(
-        <Route path="/" element={<MainLayout/>}>
-            <Route index element={<Home/>} />
-            <Route path="courses" element={<Courses/>} />
-            <Route path="mentor" element={<Mentor/>} />
-            <Route path="signin" element={<SignIn/>} />
-            <Route path="login" element={<Login/>} />
-            <Route path="/profile" element={<Profile />} />
-        </Route>
-    )
-)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "courses", element: <Courses /> },
+      { path: "mentor", element: <Mentor /> },
+      { path: "signin", element: <SignIn /> },
+      { path: "login", element: <Login /> },
+      { path: "profile", element: <Profile /> }, 
+    ],
+  },
+]);
 export default Router;
