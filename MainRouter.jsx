@@ -19,7 +19,14 @@ const router = createBrowserRouter([
       { path: "mentor", element: <Mentor /> },
       { path: "signin", element: <SignIn /> },
       { path: "login", element: <Login /> },
-      { path: "profile", element: <Profile /> }, 
+       {
+        path: "profile",
+        element: <Profile />,
+        children: [
+          { path: "settings", element: <Settings /> },
+          { path: "dashboard", element: <Dashboard /> },
+        ],
+      },
     ],
   },
 ]);
