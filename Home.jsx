@@ -21,10 +21,43 @@ function Home() {
       </h2>
 
       <NavLink to="/Courses">
-        <button className="absolute top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 hover:bg-red-700 text-white border-none py-2.5 px-5 text-[1.4rem] font-bold cursor-pointer rounded-[15px] z-10 transition-all duration-200 ease-in-out hover:scale-105">
-          Get Started
-        </button>
-      </NavLink>
+  <button
+    className="
+      absolute
+      top-[56%]
+      left-1/2
+      -translate-x-1/2
+      -translate-y-1/2
+      bg-gradient-to-r
+      from-red-500
+      via-pink-500
+      to-orange-500
+      hover:from-red-600
+      hover:via-pink-600
+      hover:to-orange-600
+      text-white
+      border-none
+      px-5 py-3
+      sm:px-6 sm:py-3
+      md:px-8 md:py-4
+      text-base
+      sm:text-lg
+      md:text-xl
+      font-bold
+      rounded-xl
+      shadow-lg
+      hover:shadow-2xl
+      cursor-pointer
+      z-10
+      transition-all
+      duration-300
+      ease-in-out
+      hover:scale-105
+      whitespace-nowrap
+    ">
+    Get Started
+  </button>
+</NavLink>
     </div>
   );
 }
